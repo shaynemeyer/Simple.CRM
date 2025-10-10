@@ -51,23 +51,8 @@
           <!-- ============================================================== -->
           <!-- Logo -->
           <!-- ============================================================== -->
-          <a class="navbar-brand" href="index.html">
-            <!-- Logo icon -->
-            <b class="logo-icon">
-              <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-              <!-- Dark Logo icon -->
-              <img src="~/images/logo-icon.png" alt="homepage" class="dark-logo" />
-              <!-- Light Logo icon -->
-              <img src="~/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-            </b>
-            <!--End Logo icon -->
-            <!-- Logo text -->
-            <span class="logo-text">
-              <!-- dark Logo text -->
-              <img src="~/images/logo-text.png" alt="homepage" class="dark-logo" />
-              <!-- Light Logo text -->
-              <img src="~/images/logo-light-text.png" class="light-logo" alt="homepage" />
-            </span>
+          <a class="navbar-brand text-light" asp-page="Index">
+            Simple CRM
           </a>
           <!-- ============================================================== -->
           <!-- End Logo -->
@@ -83,27 +68,15 @@
           <!-- ============================================================== -->
           <!-- toggle and nav items -->
           <!-- ============================================================== -->
-          <ul class="navbar-nav float-start me-auto">
-            <!-- ============================================================== -->
-            <!-- Search -->
-            <!-- ============================================================== -->
-            <li class="nav-item search-box">
-              <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i
-                  class="mdi mdi-magnify fs-4"></i></a>
-              <form class="app-search position-absolute">
-                <input type="text" class="form-control" placeholder="Search &amp; enter" />
-                <a class="srh-btn"><i class="mdi mdi-close"></i></a>
-              </form>
-            </li>
-          </ul>
+   
           <!-- ============================================================== -->
           <!-- Right side toggle and nav items -->
           <!-- ============================================================== -->
-          <ul class="navbar-nav float-end">
+          <!-- <ul class="navbar-nav float-end">
             <!-- ============================================================== -->
             <!-- User profile and search -->
             <!-- ============================================================== -->
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="
                     nav-link
                     dropdown-toggle
@@ -120,11 +93,11 @@
                   Balance</a>
                 <a class="dropdown-item" href="javascript:void(0)"><i class="mdi mdi-email m-r-5 m-l-5"></i> Inbox</a>
               </ul>
-            </li>
+            </li> -->
             <!-- ============================================================== -->
             <!-- User profile and search -->
             <!-- ============================================================== -->
-          </ul>
+          <!-- </ul> --> 
         </div>
       </nav>
     </header>
@@ -174,53 +147,25 @@
               </div>
               <!-- End User Profile-->
             </li>
-            <li class="p-15 m-t-10">
-              <a href="javascript:void(0)" class="
-                    btn
-                    d-block
-                    w-100
-                    create-btn
-                    text-white
-                    no-block
-                    d-flex
-                    align-items-center
-                  "><i class="mdi mdi-plus-box"></i>
-                <span class="hide-menu m-l-5">Create New</span>
-              </a>
-            </li>
+      
             <!-- User Profile-->
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" asp-page="Index" aria-expanded="false"><i
                   class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a>
             </li>
+            
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pages-profile.html"
-                aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Profile</span></a>
+              <a class="sidebar-link waves-effect waves-dark sidebar-link" asp-page="Privacy"
+                aria-expanded="false"><i class="mdi mdi-file-document"></i><span class="hide-menu">Privacy</span></a>
             </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="table-basic.html"
-                aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Table</span></a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="icon-material.html"
-                aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Icon</span></a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="starter-kit.html"
-                aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Blank</span></a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="error-404.html"
-                aria-expanded="false"><i class="mdi mdi-alert-outline"></i><span class="hide-menu">404</span></a>
-            </li>
-            <li class="sidebar-item">
+            <!-- <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-login.html"
                 aria-expanded="false"><i class="mdi mdi-login"></i><span class="hide-menu">Login</span></a>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-register.html"
                 aria-expanded="false"><i class="mdi mdi-account-plus"></i><span class="hide-menu">Register</span></a>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -234,29 +179,6 @@
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
     <div class="page-wrapper">
-      <!-- ============================================================== -->
-      <!-- Bread crumb and right sidebar toggle -->
-      <!-- ============================================================== -->
-      <div class="page-breadcrumb">
-        <div class="row align-items-center">
-          <div class="col-5">
-            <h4 class="page-title">Dashboard</h4>
-            <div class="d-flex align-items-center">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Library
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ============================================================== -->
-      <!-- End Bread crumb and right sidebar toggle -->
-      <!-- ============================================================== -->
       <!-- ============================================================== -->
       <!-- Container fluid  -->
       <!-- ============================================================== -->
